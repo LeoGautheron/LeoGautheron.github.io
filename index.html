@@ -124,11 +124,8 @@
 						</div>
 					</section>
 			</div>
-            <div id="footer">
-                Last modified: Fri May 25 2018
-			</div>
 
-		<!-- Scripts -->
+        <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>
@@ -136,6 +133,22 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            
+            <div id="footer">
+                <!-- Code below to display the last modification date dynamically by doing a http request to the Github repository -->
+                <div id='theLastModificationDate'></div>
+                    <script>
+                        var url = 'https://api.github.com/repos/LeoGautheron/LeoGautheron.github.io/commits';
+                        $.ajax({type:'GET',
+                                url:url,
+                                success: function(data){
+                                var date = data[0].commit.author.date.substr(0,10);
+                                var time = data[0].commit.author.date.substr(11,5);
+                                time = time.replace(":", "h")
+                        $('#theLastModificationDate').html("Last modification: " + date + " at " + time);
+                        }});
+                </script>
+			</div>
 
 	</body>
 </html>
