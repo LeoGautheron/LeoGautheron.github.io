@@ -145,7 +145,7 @@
                                 var date = data[0].commit.author.date.substr(0,10);
                                 var time = data[0].commit.author.date.substr(11,5);
                                 time = time.replace(":", "h")
-                        $('#theLastModificationDate').html("Last modification: " + date + " at " + time);
+                        $('#theLastModificationDate').html("Last modification: " + date + " at " + time + " UTC");
                         }});
                 </script>
 			</div>
