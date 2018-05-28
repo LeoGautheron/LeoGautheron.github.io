@@ -1,0 +1,101 @@
+* {
+    font-size: 18px;
+}
+
+.mainCanvas {
+    border: solid 1px #333;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.editablecanvas {
+    cursor: crosshair;
+}
+
+.flextable {
+    table-layout: fixed;
+    -moz-box-shadow: 10px 10px 5px 0px #656565;
+    -webkit-box-shadow: 10px 10px 5px 0px #656565;
+    -o-box-shadow: 10px 10px 5px 0px #656565;
+    box-shadow: 10px 10px 5px 0px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=5);
+}
+
+.borderdarkgray {
+    border: solid 1px #999;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding: 2px;
+}
+
+.alignright {
+    float: right;
+}
+
+.borderblue {
+    border: solid 4px #33D;
+}
+
+.bordergreen {
+    border: solid 4px #3D3;
+}
+
+.borderred {
+    border: solid 4px #D33;
+}
+
+.borderorange {
+    border: solid 4px #F93;
+}
+
+.blue {
+    color: #33D;
+}
+
+.green {
+    color: #3D3;
+}
+
+.red {
+    color: #D33;
+}
+
+.dropbox {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 5px;
+}
+
+.helpbutton {
+    position: fixed;
+    top: 7px;
+    right: 7px;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.backgroundGray {
+    background: #EEE;
+}
+
+.backgroundWhite {
+    background: #FFF;
+}
+
+input {
+    font-size: 18px !important;
+    border-radius: 5px;
+}
