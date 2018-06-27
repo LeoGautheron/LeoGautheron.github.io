@@ -1,5 +1,4 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
 	Prologue by HTML5 UP
@@ -1552,7 +1551,7 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Trebuchet MS', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1571,7 +1570,7 @@
 		}
 
 	input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Trebuchet MS', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1624,7 +1623,7 @@
 
 	strong, b {
 		font-weight: 300;
-		color: #666;
+		color: #222;
 	}
 
 	em, i {
@@ -2053,7 +2052,7 @@
 		#logo p {
 			position: relative;
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.58em;
 			color: rgba(255, 255, 255, 0.5);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
@@ -2085,7 +2084,7 @@
 			#nav ul li a span {
 				position: relative;
 				display: block;
-				font-size: 0.8em;
+				font-size: 0.7em;
 			}
 
 				#nav ul li a span:before {
