@@ -2045,14 +2045,14 @@
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 0.8em;
 			line-height: 1em;
 		}
 
 		#logo p {
 			position: relative;
 			display: block;
-			font-size: 0.57em;
+			font-size: 0.45em;
 			color: rgba(255, 255, 255, 0.5);
 			line-height: 1.25em;
 			margin: 0.5em 0 0 0;
@@ -2084,7 +2084,7 @@
 			#nav ul li a span {
 				position: relative;
 				display: block;
-				font-size: 0.7em;
+				font-size: 0.63em;
 			}
 
 				#nav ul li a span:before {
