@@ -1986,7 +1986,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #666666 url("images/overlay.png"); /* 222629 */
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2036,7 +2036,7 @@
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 1.75em 0.6em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2053,9 +2053,9 @@
 			position: relative;
 			display: block;
 			font-size: 0.45em;
-			color: rgba(255, 255, 255, 0.5);
-			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
+			color: rgba(255, 255, 255, 1.0);
+			line-height: 2.00em;
+			margin: 2.5em 0 0 0;
 		}
 
 		#logo .image {
@@ -2065,13 +2065,14 @@
 		}
 
 	#nav ul {
+		margin-top: 3em;
 		margin-bottom: 0;
 	}
 
 		#nav ul li a {
 			display: block;
 			padding: 0.5em 1.5em 0.5em 1.5em;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 1.0);
 			text-decoration: none;
 			outline: 0;
 			border: 0;
