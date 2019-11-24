@@ -1,0 +1,363 @@
+
+
+#playWindow {
+	position: relative;
+	margin: auto;
+	width: 560px;
+	height: 630px;
+	background-color: #eeeeee;
+	text-align: center;
+	font-family: Arial;
+}
+
+#difficultyMenu {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 95%;
+	height: auto;
+	font-size: 14px;
+	color: #0000FF;
+	border: 1px #0000FF solid
+}
+
+.buttonDifficulty {
+	width: 84%;
+	color: #fff;
+	margin: 5px;
+	padding: 5px;
+	cursor: pointer;
+	font-size: 100%;
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3);
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	background: #325ecd;
+	background-image: linear-gradient(to bottom, rgb(34, 65, 201) 0%, rgb(78, 145, 212) 100%);
+	border: 1px solid #0028aa;
+	border-radius: 10px;
+}
+
+.buttonDifficulty:hover {
+	opacity: .85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	transition: opacity 100ms ease-in-out;
+	-moz-transition: opacity 100ms ease-in-out;
+	-webkit-transition: opacity 100ms ease-in-out;
+	box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .2);
+	-webkit-shadow: 0px 0px 3px 1px rgba(0, 0, 0, .2);
+}
+
+#infoMenu {
+	position: absolute;
+	top: 9%;
+	height: 5%;
+	left: 0%;
+	right: 0;
+	background-color: transparent
+}
+
+#infoMenuDifficulty {
+	position: relative;
+	top: 25%;
+	left: -10%;
+	font-size: 110%
+}
+
+#infoMenuDifficultyName {
+	position: relative;
+	top: 25%;
+	left: -10%;
+	font-size: 110%
+}
+
+#infoMenuTimer {
+	position: relative;
+	top: 25%;
+	left: 10%;
+	font-size: 110%
+}
+
+#infoMenuTimerValue {
+	position: relative;
+	top: 25%;
+	left: 10%;
+	font-size: 110%;
+	color: #dd3322
+}
+
+#board {
+	position: absolute;
+	top: 16%;
+	bottom: 0%;
+	left: 2%;
+	width: 96%;
+	cursor: pointer;
+}
+
+#bloc0 {
+	position: absolute;
+	top: 0;
+	width: 33%;
+	height: 33%;
+	background-color: #ffffff;
+	border: 2px solid blue
+}
+
+#bloc1 {
+	position: absolute;
+	top: 0;
+	left: 33%;
+	width: 33%;
+	height: 33%;
+	background-color: #e8f4f4;
+	border: 2px solid blue
+}
+
+#bloc2 {
+	position: absolute;
+	top: 0;
+	left: 66%;
+	width: 33%;
+	height: 33%;
+	background-color: #ffffff;
+	border: 2px solid blue
+}
+
+#bloc3 {
+	position: absolute;
+	top: 33%;
+	width: 33%;
+	height: 33%;
+	background-color: #e8f4f4;
+	border: 2px solid blue
+}
+
+#bloc4 {
+	position: absolute;
+	top: 33%;
+	left: 33%;
+	width: 33%;
+	height: 33%;
+	background-color: #ffffff;
+	border: 2px solid blue
+}
+
+#bloc5 {
+	position: absolute;
+	top: 33%;
+	left: 66%;
+	width: 33%;
+	height: 33%;
+	background-color: #e8f4f4;
+	border: 2px solid blue
+}
+
+#bloc6 {
+	position: absolute;
+	top: 66%;
+	width: 33%;
+	height: 33%;
+	background-color: #ffffff;
+	border: 2px solid blue
+}
+
+#bloc7 {
+	position: absolute;
+	top: 66%;
+	left: 33%;
+	width: 33%;
+	height: 33%;
+	background-color: #e8f4f4;
+	border: 2px solid blue
+}
+
+#bloc8 {
+	position: absolute;
+	top: 66%;
+	left: 66%;
+	width: 33%;
+	height: 33%;
+	background-color: #ffffff;
+	border: 2px solid blue
+}
+
+.cell {
+	position: absolute;
+	height: 84%;
+	width: 84%;
+	top: 0%;
+	left: 0%;
+	border: 1px solid #aaaadd;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 300%
+}
+
+.cellTopLeft {
+	top: 0;
+	width: 33%;
+	height: 33%;
+}
+
+.cellTopMiddle {
+	top: 0;
+	left: 33%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellTopRight {
+	top: 0;
+	left: 66%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellMiddleLeft {
+	top: 33%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellMiddleMiddle {
+	top: 33%;
+	left: 33%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellMiddleRight {
+	top: 33%;
+	left: 66%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellBottomLeft {
+	top: 66%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellBottomMiddle {
+	top: 66%;
+	left: 33%;
+	width: 33%;
+	height: 33%;
+}
+
+.cellBottomRight {
+	top: 66%;
+	left: 66%;
+	width: 33%;
+	height: 33%;
+}
+
+#menuSelectDigit {
+	cursor: pointer;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	height: 15%;
+	width: 15%;
+	font-size: 14px;
+	color: #0000FF;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.buttonSelectDigit {
+	position: absolute;
+	border-radius: 50%;
+	width: 20.0%;
+	height: 20.0%;
+	margin: 1%;
+	color: #fff;
+	padding: 4px;
+	cursor: pointer;
+	font-size: 130%;
+	text-align: center;
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3);
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	background: #325ecd;
+	background-image: linear-gradient(to bottom, rgb(34, 65, 201) 0%, rgb(78, 145, 212) 100%);
+	border: 1px solid #0028aa;
+	opacity: 0.9;
+	pointer-events: auto;
+}
+
+.buttonSelectDigit:hover {
+	opacity: .8;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=8)";
+	transition: opacity 100ms ease-in-out;
+	-moz-transition: opacity 100ms ease-in-out;
+	-webkit-transition: opacity 100ms ease-in-out;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	-webkit-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+}
+
+#buttonSelectDigit1 {
+	top: 90%;
+	left: 20%;
+}
+
+#buttonSelectDigit2 {
+	top: 65%;
+	left: 2%;
+}
+
+#buttonSelectDigit3 {
+	top: 34%;
+	left: 2%;
+}
+
+#buttonSelectDigit4 {
+	top: 9%;
+	left: 20%;
+}
+
+#buttonSelectDigit5 {
+	top: 0%;
+	left: 50%;
+}
+
+#buttonSelectDigit6 {
+	top: 9%;
+	left: 79%;
+}
+
+#buttonSelectDigit7 {
+	top: 34%;
+	left: 97%;
+}
+
+#buttonSelectDigit8 {
+	top: 65%;
+	left: 97%;
+}
+
+#buttonSelectDigit9 {
+	top: 90%;
+	left: 79%;
+}
+
+#buttonSelectDigitX {
+	top: 100%;
+	left: 50%;
+}
+
+div {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome, Opera and Firefox */
+}
+
