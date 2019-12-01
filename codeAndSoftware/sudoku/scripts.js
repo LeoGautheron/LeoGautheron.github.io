@@ -423,6 +423,16 @@ function releaseClickCell(e) {
 function selectValue(n) {
     selectedValueByUser = n;
 }
+
+function getRandom17CluesSudoku() {
+    grid = grids17clues[Math.floor(Math.random() * grids17clues.length)];
+    g = []
+    for (i=0; i<grid.length; i++) {
+        g.push(parseInt(grid.charAt(i)))
+    }
+    return g
+}
+
 document.getElementById("buttonEasy").addEventListener("click", function(event) {
     fillGrid(generateGrid(45));
     document.getElementById("infoMenuDifficultyName").innerText = "Easy";
@@ -436,6 +446,11 @@ document.getElementById("buttonMedium").addEventListener("click", function(event
 document.getElementById("buttonHard").addEventListener("click", function(event) {
     fillGrid(generateGrid(20)); // will be around 24 on average
     document.getElementById("infoMenuDifficultyName").innerText = "Hard";
+    startTimer();
+}, false);
+document.getElementById("buttonHardest").addEventListener("click", function(event) {
+    fillGrid(getRandom17CluesSudoku());
+    document.getElementById("infoMenuDifficultyName").innerText = "Hardest (17 clues)";
     startTimer();
 }, false);
 for (i = 0; i < 81; i++) {
