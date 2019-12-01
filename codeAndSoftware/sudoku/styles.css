@@ -270,7 +270,7 @@
 
 .buttonSelectDigit {
 	position: absolute;
-	border-radius: 50%;
+	border-radius: 100%;
 	width: 20.0%;
 	height: 20.0%;
 	margin: 1%;
@@ -286,12 +286,12 @@
 	background: #325ecd;
 	background-image: linear-gradient(to bottom, rgb(34, 65, 201) 0%, rgb(78, 145, 212) 100%);
 	border: 1px solid #0028aa;
-	opacity: 0.9;
+	opacity: 1.0;
 	pointer-events: auto;
 }
 
 .buttonSelectDigit:hover {
-	opacity: .8;
+	opacity: 1.0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=8)";
 	transition: opacity 100ms ease-in-out;
 	-moz-transition: opacity 100ms ease-in-out;
@@ -301,24 +301,62 @@
 	-webkit-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
 }
 
+.buttonSelectPossibleDigit {
+	position: absolute;
+	border-radius: 100%;
+	width: 15.0%;
+	height: 15.0%;
+	margin: 1%;
+	color: #fff;
+	padding: 2px;
+	cursor: pointer;
+	font-size: 80%;
+	text-align: center;
+	box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3);
+	-webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
+	-moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	background: #325e9d;
+	background-image: linear-gradient(to bottom, rgb(34, 65, 171) 0%, rgb(78, 145, 182) 100%);
+	border: 1px solid #00287a;
+	opacity: 1.0;
+	pointer-events: auto;
+}
+
+.buttonSelectPossibleDigit:hover {
+	opacity: 1.0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=8)";
+	transition: opacity 100ms ease-in-out;
+	-moz-transition: opacity 100ms ease-in-out;
+	-webkit-transition: opacity 100ms ease-in-out;
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	-webkit-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+}
+
+#buttonSelectDigitX {
+	top: 100%;
+	left: 50%;
+}
+
 #buttonSelectDigit1 {
 	top: 90%;
-	left: 20%;
+	left: 79%;
 }
 
 #buttonSelectDigit2 {
 	top: 65%;
-	left: 2%;
+	left: 98%;
 }
 
 #buttonSelectDigit3 {
-	top: 34%;
-	left: 2%;
+	top: 35%;
+	left: 98%;
 }
 
 #buttonSelectDigit4 {
-	top: 9%;
-	left: 20%;
+	top: 10%;
+	left: 79%;
 }
 
 #buttonSelectDigit5 {
@@ -327,28 +365,68 @@
 }
 
 #buttonSelectDigit6 {
-	top: 9%;
-	left: 79%;
+	top: 10%;
+	left: 21%;
 }
 
 #buttonSelectDigit7 {
-	top: 34%;
-	left: 97%;
+	top: 35%;
+	left: 2%;
 }
 
 #buttonSelectDigit8 {
 	top: 65%;
-	left: 97%;
+	left: 2%;
 }
 
 #buttonSelectDigit9 {
 	top: 90%;
-	left: 79%;
+	left: 21%;
 }
 
-#buttonSelectDigitX {
-	top: 100%;
-	left: 50%;
+#buttonSelectPossibleDigit1 {
+	top: 114%;
+	left: 98%;
+}
+
+#buttonSelectPossibleDigit2 {
+	top: 78%;
+	left: 124%;
+}
+
+#buttonSelectPossibleDigit3 {
+	top: 32%;
+	left: 124%;
+}
+
+#buttonSelectPossibleDigit4 {
+	top: -4%;
+	left: 98%;
+}
+
+#buttonSelectPossibleDigit5 {
+	top: -18%;
+	left: 55%;
+}
+
+#buttonSelectPossibleDigit6 {
+	top: -4%;
+	left: 12%;
+}
+
+#buttonSelectPossibleDigit7 {
+	top: 32%;
+	left: -14%;
+}
+
+#buttonSelectPossibleDigit8 {
+	top: 78%;
+	left: -14%;
+}
+
+#buttonSelectPossibleDigit9 {
+	top: 114%;
+	left: 12%;
 }
 
 div {

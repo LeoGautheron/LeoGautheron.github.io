@@ -347,10 +347,38 @@ function releaseClickCell(e) {
     cell = document.getElementById(currCellId)
     cell.style.backgroundColor = "";
 
-    if (selectedValueByUser == "0") {
+    value = parseInt(selectedValueByUser);
+    if (value == 0) {
         cell.innerText = "";
-    } else if (selectedValueByUser != "-1") {
+        cell.style.fontSize = "300%";
+        cell.style.textAlign = "center";
+    } else if (value >= 1 && value <= 9) {
+        cell.innerText = "";
+        cell.style.fontSize = "300%";
+        cell.style.textAlign = "center";
         cell.innerText = selectedValueByUser;
+    } else if (value <= -1 && value >= -9) {
+        if (cell.style.fontSize == "100%") {
+            oldString = cell.innerText;
+        } else {
+            oldString = "";
+        }
+        cell.style.fontSize = "100%";
+        cell.style.textAlign = "left";
+
+        newString = "&nbsp;&nbsp;";
+        for (i = 1; i < 10; i++) {
+            if ((oldString.includes(i.toString()) && value != i * (-1)) ||
+                (!oldString.includes(i.toString()) && value == i * (-1))) {
+                newString = newString.concat(i.toString(), "&nbsp;");
+            } else {
+                newString = newString.concat("&nbsp;&nbsp;&nbsp;");
+            }
+            if (i == 3 || i == 6) {
+                newString = newString.concat("<br>&nbsp;&nbsp;");
+            }
+        }
+        cell.innerHTML = newString;
     }
 
     var i = 10;
@@ -359,14 +387,14 @@ function releaseClickCell(e) {
             clearInterval(k);
             menuSelectDigit.style.left = "0%";
             menuSelectDigit.style.top = "100%";
-
             g = []
             notFilled = 0
             for (m = 0; m < 81; m++) {
-                value = document.getElementById("cell_" + m).innerText;
-                if (value == "") {
-                    g.push(0)
-                    notFilled++
+                cell = document.getElementById("cell_" + m);
+                value = cell.innerText;
+                if (value == "" || cell.style.fontSize == "100%") {
+                    g.push(0);
+                    notFilled++;
                 } else {
                     g.push(parseInt(value))
                 }
@@ -375,7 +403,7 @@ function releaseClickCell(e) {
             for (m = 0; m < 81; m++) {
                 cell = document.getElementById("cell_" + m)
                 cell.style.backgroundColor = "";
-                if (!defaultGrid[m] && cell.innerText != "" && !isGridValid(g, m)) {
+                if (!defaultGrid[m] && cell.innerText != "" && cell.style.fontSize != "100%" && !isGridValid(g, m)) {
                     cell.style.backgroundColor = "#ff8844";
                 }
             }
